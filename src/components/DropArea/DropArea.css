@@ -1,19 +1,20 @@
 .centreText {
     text-align: center;
   }
-  
+
   h1 {
     font-size: 150px;
   }
   
   .dropZone {
+    border-style: dashed;
     margin-top: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-top: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 10px;
     padding-bottom: 0px;
     height: 51vh;
-    background-color: #202125;
+    background-color: #6589ff;
     border-radius: 20px;
     color: white;
   }

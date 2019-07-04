@@ -1,6 +1,7 @@
 import * as React from 'react'
 import ReactDropzone from 'react-dropzone'
 import './DropArea.css'
+// import logo from '../public/images/logo.png'
 
 interface IState {
     imageFiles: any[],
@@ -75,7 +76,12 @@ export default class DropArea extends React.Component<IProps, IState>{
                                 {
                                     this.state.imageFiles.length > 0 ?
                                         <div>{this.state.imageFiles.map((file) => <img className="image1" key={file.name} src={file.preview} />)}</div> :
-                                        <p>Try dropping some files here, or click to select files to upload.</p>
+                                        <p>
+                                            <img src='https://instaoffline.net/assets/img/folder.png'/>
+                                            <br/>
+                                            <br/>
+                                            Try dropping some files here, or click to select files to upload.
+                                        </p>
                                 }
                             </div>
                         </ReactDropzone>
